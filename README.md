@@ -23,7 +23,7 @@ to find the most salient sentences in a text.
 
 ![Screenshot of Salience Output](screenshot.png)
 
-## How to Run
+## How to Run (Python)
 
 ```sh
 $ poetry install
@@ -31,3 +31,19 @@ $ poetry run flask --app salience run
 ```
 
 This will kick off a flask server. You can access the output at `http://127.0.0.1:5000/static/index.html`
+
+
+## How to Run (JavaScript)
+```sh
+$ npm install
+$ npm start
+```
+
+This will kick off a flask server. You can access the output at `http://127.0.0.1:5001/static/index.html`
+
+## Differences Between Python and JavaScript Versions
+
+1. **Sentence Extraction:** Python uses `nltk` tokenization, JavaScript uses a hacky regex.
+2. **Cosign Similarity:** Python uses `scipy`, JavaScript uses `tensorflow`.
+3. **Embeddings:** Python uses `transformers`, JavaScript uses `tensorflow`.
+4. **General Math:** Python uses `numpy`, JavaScript uses `tensorflow`.
